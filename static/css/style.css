@@ -1,0 +1,141 @@
+/* Spam Email Classifier - Custom Stylesheet */
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --secondary: #64748b;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #f59e0b;
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #475569 !important;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background-color: var(--surface);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}
+
+/* Badges */
+.badge-spam {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+}
+
+.badge-ham {
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+}
+
+/* Metric Display Cards */
+.metric-card {
+  padding: 1.25rem;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Result Cards */
+.result-card-spam {
+  border-left: 6px solid var(--danger);
+  background: linear-gradient(to right, #fff5f5, #ffffff);
+}
+
+.result-card-ham {
+  border-left: 6px solid var(--success);
+  background: linear-gradient(to right, #f0fdf4, #ffffff);
+}
+
+/* Keyword Highlights */
+.indicator-tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8125rem;
+  border-radius: 6px;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  margin-right: 0.35rem;
+  margin-bottom: 0.35rem;
+  font-family: monospace;
+}
+
+/* Table styling */
+.table th {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Confusion Matrix Box */
+.cm-table {
+  border-collapse: separate;
+  border-spacing: 4px;
+}
+
+.cm-cell {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.cm-tp { background-color: #dcfce7; color: #166534; }
+.cm-tn { background-color: #dbeafe; color: #1e40af; }
+.cm-fp { background-color: #fee2e2; color: #991b1b; }
+.cm-fn { background-color: #fef3c7; color: #92400e; }

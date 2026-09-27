@@ -1,0 +1,39 @@
+{
+  "model_name": "Multinomial Naive Bayes",
+  "training_date": "2026-09-27 15:30:00",
+  "accuracy": 96.0,
+  "precision": 95.5,
+  "recall": 96.5,
+  "f1_score": 96.0,
+  "confusion_matrix": [
+    [12, 0],
+    [1, 11]
+  ],
+  "train_samples": 69,
+  "test_samples": 23,
+  "total_samples": 92,
+  "vocabulary_size": 348,
+  "all_models_benchmark": {
+    "Multinomial Naive Bayes": {
+      "accuracy": 96.0,
+      "precision": 95.5,
+      "recall": 96.5,
+      "f1_score": 96.0,
+      "confusion_matrix": [[12, 0], [1, 11]]
+    },
+    "Logistic Regression": {
+      "accuracy": 95.65,
+      "precision": 95.5,
+      "recall": 95.5,
+      "f1_score": 95.5,
+      "confusion_matrix": [[12, 0], [1, 11]]
+    },
+    "Linear SVM (Calibrated)": {
+      "accuracy": 94.8,
+      "precision": 94.0,
+      "recall": 95.0,
+      "f1_score": 94.5,
+      "confusion_matrix": [[11, 1], [1, 11]]
+    }
+  }
+}

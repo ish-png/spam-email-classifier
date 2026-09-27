@@ -1,0 +1,6 @@
+{
+  "name": "Spam Email Classifier",
+  "description": "Production-grade NLP and Machine Learning Spam Email Classifier featuring TF-IDF vectorization, multi-model evaluation, text analytics, explainability, and full dataset inspection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
